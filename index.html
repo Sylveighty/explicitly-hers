@@ -91,7 +91,8 @@
     .hero-subtitle { font-family:'Lora',serif; font-style:italic; font-size:clamp(0.95rem,2vw,1.15rem); color:var(--bark); margin-top:1.8rem; text-align:center; max-width:480px; line-height:1.8; opacity:0; animation:fade-up 0.9s ease 0.75s forwards; }
     .hero-divider { width:60px; height:2px; background:linear-gradient(to right,transparent,var(--rose-light),transparent); margin:2rem auto; opacity:0; animation:fade-up 0.9s ease 0.95s forwards; }
     .hero-org { font-family:'Nunito',sans-serif; font-size:0.75rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--plum-light); opacity:0; animation:fade-up 0.9s ease 1.1s forwards; }
-    .hero-scroll { position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:0.5rem; opacity:0; animation:fade-up 1s ease 1.5s forwards; }
+    .hero-scroll { position:absolute; bottom:2.5rem; left:0; right:0; margin:0 auto; width:fit-content; display:flex; flex-direction:column; align-items:center; gap:0.5rem; opacity:0; animation:scroll-fade 1s ease 1.5s forwards; }
+    @keyframes scroll-fade { from { opacity:0; } to { opacity:1; } }
     .hero-scroll span { font-family:'Nunito',sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--bark); }
     .scroll-line { width:1px; height:40px; background:linear-gradient(to bottom,var(--rose-light),transparent); animation:scroll-pulse 2s ease-in-out infinite; }
     @keyframes scroll-pulse { 0%,100% { opacity:0.4; } 50% { opacity:1; } }
@@ -251,7 +252,7 @@
   <h2 class="portrait-name reveal">Kathlen Mae Callos</h2>
   <p class="portrait-role reveal">BSIT 2-1 · Member, EXPLICIT Organization</p>
   <div class="bio-text reveal">
-    A friendly and caring soul, she moves through the world with warmth and trustworthiness. A student of information technology and a member of EXPLICIT, she carries her love for both hardware and code - and the quiet courage to learn what she doesn't yet know.
+    A friendly and caring soul, she moves through the world with warmth and trustworthiness. A student of information technology and a member of EXPLICIT, she carries her love for both hardware and code, and the quiet courage to learn what she doesn't yet know.
   </div>
 </section>
 
@@ -268,7 +269,7 @@
       <div class="ti-content">
         <p class="ti-chapter">Chapter One</p>
         <h3 class="ti-title">A Spark in the Classroom</h3>
-        <p class="ti-text">Long before college, a TVE class in high school opened the door. ICT became a world she wanted to live in - from senior high to BSIT, every step was guided by that early curiosity about technology and what it could do.</p>
+        <p class="ti-text">Long before college, a TVE class in high school opened the door. ICT became a world she wanted to live in, from senior high to BSIT, every step was guided by that early curiosity about technology and what it could do.</p>
       </div>
       <div class="ti-dot"><div class="dot-inner"></div></div>
       <div class="ti-empty"></div>
@@ -300,7 +301,7 @@
       <div class="ti-content">
         <p class="ti-chapter">Chapter Four: The Breakthrough</p>
         <h3 class="ti-title">"Trust GOD, and Nothing is Impossible with Him"</h3>
-        <p class="ti-text">She doubted herself. Could she really compete in the Philippine History Quiz Bee and represent EXPLICIT? With faith, effort, and time - she qualified. She competed. She came back with lessons, memories, and a heart full of gratitude. It was more than a competition. It was proof.</p>
+        <p class="ti-text">She doubted herself. Could she really compete in the Philippine History Quiz Bee and represent EXPLICIT? With faith, effort, and time, she qualified. She competed. She came back with lessons, memories, and a heart full of gratitude. It was more than a competition. It was proof.</p>
       </div>
     </div>
 
